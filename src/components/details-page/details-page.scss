@@ -1,0 +1,84 @@
+@import "../../styles";
+@import "../../helpers";
+@import "../confirmation-popup/confirmation-popup";
+
+header {
+  display: flex;
+  button {
+    @extend %action--buttons;
+    font-size: $font-size + 15px;
+  }
+  .title-wrapper {
+    @extend %align-content;
+  }
+}
+
+section {
+  margin: 10px;
+  .game-wrapper {
+    @extend %align-content;
+    @extend %box-shadow;
+    display: flex;
+    border: 1px solid $border-color;
+    background-color: $bg-color;
+    .game--image_wrapper {
+      display: flex;
+      align-items: center;
+      .game--image {
+        width: 250px;
+        height: auto;
+      }
+    }
+    .game--content {
+      @extend %display-flex;
+      flex-direction: column;
+      margin: 10px;
+      p {
+        flex-grow: 1;
+      }
+      .game--buttons {
+        text-align: right;
+        button {
+          @extend %action--buttons;
+        }
+        .game--delete {
+          color: red;
+        }
+        .game--edit {
+          color: #00b9f1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    height: 50px;
+    .header--title {
+      font-size: $font-size + 8px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 40px;
+    .header--title {
+      font-size: $font-size + 4px;
+    }
+  }
+
+  .game-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    .game--content {
+      h2 {
+        font-size: $font-size + 2px;
+      }
+      p {
+        font-size: $font-size - 1px;
+      }
+    }
+  }
+}

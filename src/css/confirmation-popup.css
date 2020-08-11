@@ -1,0 +1,148 @@
+.popUp .popUp--wrapper .popUp--header button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header .header--wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body, header .header--wrapper, .popUp .popUp--wrapper .popUp--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  flex-direction: column;
+  color: #333;
+}
+
+input,
+textarea {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  padding-left: 5px;
+  text-align: justify;
+}
+
+.button-style, header .header--wrapper .header--buttons button, .popUp .popUp--wrapper .game--buttons button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+header {
+  border-bottom: 1px solid #eee;
+}
+
+header .header--wrapper {
+  align-items: baseline;
+  height: 70px;
+  line-height: 70px;
+}
+
+header .header--wrapper .header--title {
+  padding: 0 10px;
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fafafa;
+  line-height: 100px;
+}
+
+footer p {
+  text-align: center;
+}
+
+.popUp .popUp--wrapper .popUp--header button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+header .header--wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body, header .header--wrapper, .popUp .popUp--wrapper .popUp--header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popUp {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popUp .popUp--wrapper {
+  max-width: 400px;
+  width: 100%;
+  margin: 15% auto;
+  background-color: #fafafa;
+}
+
+.popUp .popUp--wrapper .popUp--header {
+  text-indent: 10px;
+  height: 40px;
+  line-height: 40px;
+  align-items: baseline;
+}
+
+.popUp .popUp--wrapper .popUp--header h3 {
+  margin: 0;
+}
+
+.popUp .popUp--wrapper .popUp--content {
+  background-color: white !important;
+}
+
+.popUp .popUp--wrapper .popUp--content p {
+  text-align: center;
+  padding: 20px;
+}
+
+.popUp .popUp--wrapper .game--buttons {
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.popUp .popUp--wrapper .game--buttons .game--delete {
+  color: red;
+}
+/*# sourceMappingURL=confirmation-popup.css.map */

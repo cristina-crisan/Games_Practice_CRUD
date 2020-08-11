@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="..\..\css\add-or-update.css">
+  <script src="https://kit.fontawesome.com/637a8056ca.js" crossorigin="anonymous"></script>
+  <title>Add or update page</title>
+</head>
+
+<body>
+  <header>
+    <button onclick="back()"><i class="fas fa-arrow-circle-left"></i></button>
+    <div class="title-wrapper">
+      <h1 class="header--title"></h1>
+    </div>
+  </header>
+  <div class="content">
+    <form class="form">
+      <div class="section-wrapper">
+        <div class="details">
+          <label for="name">Game title:</label>
+          <input class="title" type="text" name="title" placeholder ="Game title" />
+          <label for="name">Game genre:</label>
+          <input class="genre" type="text" name="genre" placeholder="Game genre" />
+          <label for="name">Game publisher:</label>
+          <input class="publisher" type="text" name="publisher" placeholder="Game publisher" />
+          <label for="description">Game description:</label>
+          <textarea class="description" placeholder="Game description" ></textarea>
+        </div>
+        <div class="image">
+          <label for="image">Game image:</label>
+          <input type="url" name="image" placeholder="Image url" onchange="changeUrl()"/>
+          <div class="image--game">
+            <img src="..\..\img\765-default-avatar.png" alt="image game">
+          </div>
+        </div>
+        <div class="save--button">
+          <button type="button" onclick="save()">SAVE</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <footer>
+    <p>Cristina Crisan</p>
+  </footer>
+  <script type="text/javascript" src="../../http-service.js"></script>
+  <script type="text/javascript" src="add-or-update.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+@import "../../styles";
+@import "../../helpers";
+
+header {
+  display: flex;
+  button {
+    @extend %action--buttons;
+    font-size: $font-size + 15px;
+    i {
+      color: $primary-color;
+    }
+  }
+  .title-wrapper {
+    @extend %align-content;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  form {
+    width: 100%;
+    input {
+      width: 100%;
+      height: 40px;
+      margin: 10px 10px 10px 0;
+    }
+    textarea {
+      width: 100%;
+      height: 150px;
+      margin: 10px 10px 10px 0;
+      resize: none;
+    }
+  }
+}
+
+.section-wrapper {
+  @extend %align-content;
+  @extend %align-section;
+  @extend %box-shadow;
+  padding: 10px;
+  .details input,
+  .image input {
+    display: block;
+  }
+}
+
+.image--game {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+}
+.save--button {
+  text-align: center;
+  button {
+    background-color: white;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 5px;
+    border: 1px solid white;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    height: 50px;
+    button {
+      i {
+        font-size: $font-size + 10px;
+      }
+    }
+    .title-wrapper {
+      .header--title {
+        font-size: $font-size + 8px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      height: 40px;
+      button {
+        i {
+          font-size: $font-size + 8px;
+        }
+      }
+      .title-wrapper {
+        .header--title {
+          font-size: $font-size + 6px;
+        }
+      }
+    }
+
+    .content {
+      form {
+        input {
+          height: 30px;
+        }
+      }
+    }
+
+    .image--game {
+      img {
+        max-width: 150px;
+      }
+    }
+
+    .save--button {
+      button {
+        padding: 5px;
+      }
+    }
+  }
+}

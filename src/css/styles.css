@@ -1,0 +1,77 @@
+header .header--wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body, header .header--wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  flex-direction: column;
+  color: #333;
+}
+
+input,
+textarea {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  padding-left: 5px;
+  text-align: justify;
+}
+
+.button-style, header .header--wrapper .header--buttons button {
+  background-color: white;
+  color: #333;
+  border: 1px solid #eee;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+header {
+  border-bottom: 1px solid #eee;
+}
+
+header .header--wrapper {
+  align-items: baseline;
+  height: 70px;
+  line-height: 70px;
+}
+
+header .header--wrapper .header--title {
+  padding: 0 10px;
+  margin: 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fafafa;
+  line-height: 100px;
+}
+
+footer p {
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

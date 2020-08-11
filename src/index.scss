@@ -1,0 +1,80 @@
+@import "styles.scss";
+
+.section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @extend %align-content;
+  @extend %align-section;
+  @extend %box-shadow;
+}
+
+.game {
+  margin: 10px;
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border: 2px solid $border-color;
+  @extend %box-shadow;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.game--image_wrapper {
+  border-bottom: 2px solid $border-color;
+  .game--image {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+.game-name_wrapper {
+  .game--name {
+    text-align: center;
+    font-weight: bold;
+  }
+  .game--edit {
+    @extend %action--buttons;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-wrapper {
+    max-width: 810px;
+    .game {
+      max-width: 250px;
+      width: 100%;
+      .game--image_wrapper {
+        .game--image {
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header--wrapper {
+    .header--title {
+      font-size: $font-size + 4px;
+    }
+    .header--buttons {
+      button {
+        padding: 5px;
+      }
+    }
+  }
+
+  .section-wrapper {
+    max-width: 540px;
+    .game {
+      max-width: 500px;
+      .game--image_wrapper {
+        .game--image {
+          height: 400px;
+        }
+      }
+    }
+  }
+}

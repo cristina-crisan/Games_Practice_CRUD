@@ -1,0 +1,30 @@
+$primary-color: #333;
+$secondary-color: #777;
+$border-color: #eee;
+$bg-color: #fafafa;
+$font-size: 14px;
+
+%action--buttons {
+  border: none;
+  background-color: transparent;
+  font-size: $font-size + 2px;
+  text-transform: uppercase;;
+}
+
+%align-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+%align-section{
+  margin: 20px auto;
+  background-color: $bg-color;
+}
+
+%display-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+%box-shadow{
+  box-shadow: 0px 0px 10px 0px #e8e8e8;
+}
